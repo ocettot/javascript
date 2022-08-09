@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let destinos, descuento;
+        destinos = prompt("Introduce un destino");
+
+        if ( destinos == "barcelona")
+        {
+            descuento = "5%"
+        } else if ( destinos == "madrid"){
+            descuento = "10%"
+        } else if ( destinos == "valencia"){
+            descuento = "15%"
+        } else {
+            descuento = ""
+
+        }
+
+        document.write(`<h3>El descuento es: ${descuento}</h3>`);
+        
+        
+    </script>
+</body>
+</html>

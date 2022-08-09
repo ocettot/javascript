@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad;
+        edad = prompt("Introduce tu edad");
+        //no permitir edades menores de 1 año ni mayores de 100 años
+       
+        if (edad >= 1 && edad <= 120) 
+        {
+            if (edad >= 18) {
+                document.write(`<h1 style="color:green;" > Acceso permitido </h1>`);
+                
+            } else {
+                
+                document.write("<h3>Eres menor de edad</h3>");
+            }
+
+        } else
+
+        {
+            document.write("<h3>Edad no valida</h3>");
+        }
+        
+document.write(`<h3>Edad introducida: ${edad}</h3>`);
+
+        
+            
+            
+        
+       
+    </script>
+    
+</body>
+</html>

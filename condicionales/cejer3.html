@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1, nota2, nota3;
+        let datos1, datos2, datos3, media;
+
+        datos1 = prompt("primer numero:");
+        nota1 = parseInt(datos1);
+
+        datos2 = prompt("segundo numero:");
+        nota2 = parseInt(datos2);
+
+        datos3 = prompt("tercer numero:");
+        nota3 = parseInt(datos3);
+
+        media = (nota1 + nota2 + nota3) / 3;
+
+        if (media > 5) 
+        {
+            resultado = "aprobado";
+                        
+        } else {
+            resultado = "suspendido";
+           
+        }
+
+        document.write(`<h3>La nota final es ${resultado}</h3>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let edad, final;
+        edad = prompt("Ingrese su edad: ");
+        if(isNaN(edad)){
+            final = "error. no es un numero";
+        }else{
+            final = (edad <18) ? "demasiado joven" : "mayor de edad";
+        }
+        document.write(final);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="salida"></p>
+    <script>
+        let suerte = (Math.random() * 6);
+        let dado = parseInt(suerte) + 1;
+
+        let obj1 = document.getElementById("salida");
+
+        if (dado>3){
+
+            obj1.innerHTML=`<p>Has ganado, ha salido el numero ${dado}</p>`;
+
+        }else{
+            obj1.innerHTML=`<p>Lo siento, ha salido el numero ${dado}</p>`;
+
+        }
+    </script>
+</body>
+</html>
